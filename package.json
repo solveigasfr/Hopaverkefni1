@@ -1,10 +1,9 @@
 {
-  "name": "Hopaverkefni1",
+  "name": "hopaverkefni1",
   "version": "1.0.0",
   "description": "Verkefnið felst í því að smíða vef eftir forskrift.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "sass-watch": "node-sass --source-map-embed --watch *.scss --recursive styles.css"
   },
   "repository": {
@@ -19,6 +18,8 @@
   },
   "homepage": "https://github.com/solveigasfr/Hopaverkefni1#readme",
   "devDependencies": {
-    "node-sass": "^4.12.0"
+    "@primer/css": "^13.1.0",
+    "node-sass": "^4.12.0",
+    "stylelint-config-primer": "^8.2.1"
   }
 }
