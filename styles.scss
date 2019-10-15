@@ -14,11 +14,10 @@
 html { /* stylelint-disable-line */
   box-sizing: border-box;
   overflow-x: hidden;
-  font-size: 16px; 
+  font-size: 16px;
 }
 
-  // TODO fleiri grunn stillingar
-}
+// TODO fleiri grunn stillingar
 
 // TODO sækja allar sass skrár
 @import "scss/cart.scss"
