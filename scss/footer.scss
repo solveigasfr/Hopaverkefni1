@@ -1,0 +1,17 @@
+.footer {
+  background-color: $color-blue;
+}
+
+.footer__title {
+  font-family: $font-heading;
+}
+
+.footer__text {
+  font-family: $font-main;
+  font-size: 12px;
+}
+
+.footer__list__item__link {
+  color: $color-black;
+  text-decoration: none;
+}
