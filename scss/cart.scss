@@ -1,4 +1,8 @@
-// TODO cart scss for cart.html file
-.test {
-  background: #ff0;
+@import "scss/buttons.scss";
+@import "scss/header.scss";
+@import "scss/footer.scss";
+
+.cart__icon {
+  width: 25px;
+  height: 25px;
 }

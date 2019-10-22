@@ -6,44 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Prílihúsið</title>
 
-    <link rel="stylesheet" href="grid.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../grid.css">
+    <link rel="stylesheet" href="../styles.css">
 </head>
 
 <body>
-    <header>
-        <h1>Prílihúsið</h1>
-        <ul>
-            <li><a href="index.html">FORSÍÐA</a> </li>
-            <li><a href="pages/products.html">VÖRUR</a> </li>
-            <li><a href="pages/course.html">NÁMSKEIÐ</a> </li>
-            <li><a href="pages/staff.html">STARFSFÓLK</a></li>
+    <header class="header">
+        <h1 class="header__title">Prílihúsið</h1>
+        <ul class="header__list">
+            <li class="header__list__item"><a class="header__list__item__link" href="../index.html">FORSÍÐA</a></li>
+            <li class="header__list__item"><a class="header__list__item__link" href="products.html">VÖRUR</a></li>
+            <li class="header__list__item"><a class="header__list__item__link" href="course.html">NÁMSKEIÐ</a></li>
+            <li class="header__list__item"><a class="header__list__item__link" href="staff.html">STARFSFÓLK</a></li>
         </ul>
-        <button><a href="pages/cart.html"><img src="img/cart.svg">Karfa (6)</a></button>
+        <a class="header__cart__link" href="cart.html"><img class="header__cart__image"
+                src="../img/cart.svg">Karfa(6)</a>
     </header>
     <main>
         <h2>Vörur í körfu</h2>
+        <img src="../img/Backpack.jpg" alt="backpack">
         <h2>Bakpoki</h2>
         <p>Þú getur geymt allt sem þú þarft fyrir klifrið í þessum bakpoka.</p>
         <h3>49.900 kr.-</h3>
         <p>Fjöldi:</p>
         <input type="number" value="2">
         <button>
-            <img src="img/cart.svg">Uppfæra
+            <img src="../img/cart.svg" class="cart__icon">Uppfæra
         </button>
         <button>
-            <img src="img/cart.svg">Eyða úr körfu
+            <img src="../img/cart.svg" class="cart__icon">Eyða úr körfu
         </button>
+        <img src="../img/chalkbag.jpg" alt="chalkbag">
         <h2>Kalkpoki</h2>
         <p>Kalkaðu hendurnar áður en þú verður kalkaður í hausnum.</p>
         <h3>4.900 kr.-</h3>
         <p>Fjöldi:</p>
         <input type="number" value="4">
         <button>
-            <img src="img/cart.svg">Uppfæra
+            <img src="../img/cart.svg" class="cart__icon">Uppfæra
         </button>
         <button>
-            <img src="img/cart.svg">Eyða úr körfu
+            <img src="../img/cart.svg" class="cart__icon">Eyða úr körfu
         </button>
 
         <h2>Sendingarupplýsingar</h2>
@@ -268,40 +271,40 @@
                 <option>2022</option>
             </select>
         </fieldset>
-        <button>Kaupa</button>
+        <button class="cart__button__orangeToBlue">Kaupa</button>
     </main>
-    <footer>
+    <footer class="footer">
         <ul>
-            <h2>Vöruflokkar</h2>
-            <li><a href="pages/products.html">Nauðsynjavörur</a></li>
-            <li><a href="pages/products.html">Frábærar vörur</a></li>
-            <li><a href="pages/products.html">Ómissandi vörur</a></li>
-            <li><a href="pages/products.html">Ótrúlegar vörur</a></li>
-            <li><a href="pages/products.html">Magnaðar vörur</a></li>
+            <h2 class="footer__title">Vöruflokkar</h2>
+            <li><a class="footer__list__item__link" href="products.html">Nauðsynjavörur</a></li>
+            <li><a class="footer__list__item__link" href="products.html">Frábærar vörur</a></li>
+            <li><a class="footer__list__item__link" href="products.html">Ómissandi vörur</a></li>
+            <li><a class="footer__list__item__link" href="products.html">Ótrúlegar vörur</a></li>
+            <li><a class="footer__list__item__link" href="products.html">Magnaðar vörur</a></li>
         </ul>
         <ul>
-            <h2>Vöruflokkar</h2>
-            <li><a href="pages/products.html">Trylltar vörur</a></li>
-            <li><a href="pages/products.html">Geggjaðar vörur</a></li>
-            <li><a href="pages/products.html">Svakalegar vörur</a></li>
-            <li><a href="pages/products.html">Fáránlegar vörur</a></li>
-            <li><a href="pages/products.html">Klikkaðar vörur</a></li>
+            <h2 class="footer__title">Vöruflokkar</h2>
+            <li><a class="footer__list__item__link" href="products.html">Trylltar vörur</a></li>
+            <li><a class="footer__list__item__link" href="products.html">Geggjaðar vörur</a></li>
+            <li><a class="footer__list__item__link" href="products.html">Svakalegar vörur</a></li>
+            <li><a class="footer__list__item__link" href="products.html">Fáránlegar vörur</a></li>
+            <li><a class="footer__list__item__link" href="products.html">Klikkaðar vörur</a></li>
         </ul>
         <ul>
-            <h2>Námskeið</h2>
-            <li><a href="pages/course.html">V0 - V1 námskeið</a></li>
-            <li><a href="pages/course.html">V2 - V4 námskeið</a></li>
-            <li><a href="pages/course.html">>V5 - V7 námskeið</a></li>
-            <li><a href="pages/course.html">Fjallaklifurnámskeið</a></li>
+            <h2 class="footer__title">Námskeið</h2>
+            <li><a class="footer__list__item__link" href="course.html">V0 - V1 námskeið</a></li>
+            <li><a class="footer__list__item__link" href="course.html">V2 - V4 námskeið</a></li>
+            <li><a class="footer__list__item__link" href="course.html">V5 - V7 námskeið</a></li>
+            <li><a class="footer__list__item__link" href="course.html">Fjallaklifur námskeið</a></li>
         </ul>
         <ul>
-            <h2>Síður</h2>
-            <li><a href="pages/products.html">Allar vörur</a></li>
-            <li><a href="pages/staff.html">Starfsfólk</a></li>
-            <li><a href="pages/course.html">Námskeið</a></li>
-            <li><a href="pages/cart.html">Karfa</a></li>
+            <h2 class="footer__title">Síður</h2>
+            <li><a class="footer__list__item__link" href="products.html">Allar vörur</a></li>
+            <li><a class="footer__list__item__link" href="staff.html">Starfsfólk</a></li>
+            <li><a class="footer__list__item__link" href="course.html">Námskeið</a></li>
+            <li><a class="footer__list__item__link" href="cart.html">Karfa</a></li>
         </ul>
-        <p>© 2019 Prílihúsið</p>
+        <p class="footer__text">© 2019 Prílihúsið</p>
     </footer>
 </body>
 

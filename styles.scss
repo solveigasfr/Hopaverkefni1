@@ -1,3 +1,4 @@
+// stylelint-disable selector-max-type, selector-max-compound-selectors
 @import "scss/config";
 
 * {
@@ -17,7 +18,10 @@ html { /* stylelint-disable-line */
   font-size: 16px;
 }
 
-// TODO fleiri grunn stillingar
+// Grunn stillingar
 
 // TODO sækja allar sass skrár
-@import "scss/cart.scss"
+@import "scss/cart.scss";
+@import "scss/footer.scss";
+@import "scss/header.scss";
+@import "scss/index.scss";
