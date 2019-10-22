@@ -18,9 +18,26 @@ html { /* stylelint-disable-line */
   font-size: 16px;
 }
 
-// Grunn stillingar
+html,
+body {
+  font-family: $font-main;
+}
 
-// TODO sækja allar sass skrár
+h1,
+h2,
+h3 {
+  font-family: $font-heading;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 @import "scss/cart.scss";
 @import "scss/footer.scss";
 @import "scss/header.scss";
