@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "sass-watch": "node-sass --source-map-embed --watch styles.scss --recursive styles.css",
-    "browser-sync": "browser-sync start --server --files index.html styles.css",
+    "browser-sync": "browser-sync start --server --files index.html styles.css img/",
     "sass": "node-sass --source-map-embed styles.scss styles.css",
     "dev": "npm-run-all --parallel sass sass-watch browser-sync",
     "lint": "stylelint styles.scss --syntax scss"
