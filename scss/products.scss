@@ -1,0 +1,33 @@
+@import "scss/buttons.scss";
+@import "scss/header.scss";
+@import "scss/footer.scss";
+
+.grid {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.product {
+  &__grid {
+    &__row {
+      display: flex;
+      width: 100%;
+      margin-top: 20px;
+      margin-right: -10px;
+      margin-left: -10px;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__card {
+    display: flex;
+    padding: 0px;
+    margin-bottom: 40px;
+    flex-direction: column;
+  }
+
+  &__price {
+    font-weight: bold;
+  }
+}
