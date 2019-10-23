@@ -27,6 +27,10 @@
   text-decoration: none;
 }
 
+.footer__list__item__link:hover {
+  color: $color-black;
+}
+
 .footer__col {
   width: 50%;
   margin-bottom: 20px;
