@@ -1,6 +1,11 @@
 @import "scss/buttons.scss";
 @import "scss/header.scss";
 @import "scss/footer.scss";
+@import "scss/forms.scss";
+
+.cart {
+  padding: $gutter * 2 $gutter;
+}
 
 .cart__icon {
   width: 25px;
@@ -8,6 +13,57 @@
 }
 
 .cart__heading {
+  margin-bottom: $gutter / 2;
   font-family: $font-heading;
   font-size: 36px;
+}
+
+.cart__heading__price {
+  margin-top: $gutter / 2;
+  margin-bottom: $gutter / 2;
+  font-size: 24px;
+}
+
+.cart__products {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+
+.cart__products__input {
+  width: 70px;
+  height: 30px;
+  padding-left: 8px;
+  border-color: $color-black;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 3px;
+}
+
+.cart__products__button {
+  width: 90px;
+  height: 30px;
+  margin-left: 10px;
+  border-color: $color-black;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 3px;
+}
+
+.cart__products__button:hover {
+  background-color: $color-blue;
+}
+
+.cart__products__button--2 {
+  width: 110px;
+  height: 30px;
+  margin-left: 10px;
+  border-color: $color-black;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 3px;
+}
+
+.cart__products__button--2:hover {
+  background-color: $color-blue;
 }

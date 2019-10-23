@@ -1,0 +1,15 @@
+.form {
+  display: flex;
+  width: 100px;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.form__delivery {
+  flex-direction: column;
+}
+
+.form__payment {
+  flex-direction: column;
+  flex-wrap: wrap;
+}
