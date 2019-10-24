@@ -20,8 +20,16 @@
 }
 
 .header__list__item__link {
+  font-family: $font-heading;
+  font-size: 21px;
   color: $color-black;
   text-decoration: none;
+  letter-spacing: 1.5px;
+  transition: $hover-transition;
+
+  &:hover {
+    color: $color-white;
+  }
 }
 
 .header__cart__link {
@@ -30,10 +38,29 @@
   align-items: center;
   justify-content: center;
   text-decoration: none;
+  transition: $hover-transition;
+
+  &:hover {
+    color: $color-white;
+  }
 }
 
 .header__cart__image {
   width: 30px;
   height: 30px;
   margin-right: 5px;
+}
+
+@media only screen and (min-width: $media-medium) {
+  .header__cart__link {
+    position: absolute;
+    right: 0;
+    bottom: $gutter;
+  }
+
+  .header__list {
+    max-width: 340px;
+    flex-wrap: wrap;
+    margin: auto;
+  }
 }

@@ -25,10 +25,11 @@
   font-size: $primary-font-size;
   color: $color-white;
   text-decoration: none;
-}
+  transition: $hover-transition;
 
-.footer__list__item__link:hover {
-  color: $color-black;
+  &:hover {
+    color: $color-black;
+  }
 }
 
 .footer__col {
