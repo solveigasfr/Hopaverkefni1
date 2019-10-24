@@ -1,4 +1,3 @@
-@import "./config.scss";
 
 .button {
   width: 225px;
@@ -6,6 +5,11 @@
   margin-right: auto;
   margin-bottom: 20px;
   margin-left: auto;
+}
+
+.button--index {
+  width: 225px;
+  margin: 20px 0;
 }
 
 .button__orangeToBlue {
