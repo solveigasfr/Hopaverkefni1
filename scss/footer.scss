@@ -1,54 +1,54 @@
 .footer {
   padding: $gutter * 2 $gutter;
   background-color: $color-blue;
-}
 
-.footer__content {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.footer__list {
-  width: 100%;
-  list-style: none;
-}
-
-.footer__li {
-  margin-bottom: $gutter / 2;
-}
-
-.footer__title {
-  margin-bottom: $gutter;
-}
-
-.footer__list__item__link {
-  font-size: $primary-font-size;
-  color: $color-white;
-  text-decoration: none;
-  transition: $hover-transition;
-
-  &:hover {
-    color: $color-black;
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
   }
-}
 
-.footer__col {
-  width: 50%;
-  margin-bottom: 20px;
-}
+  &__li {
+    margin-bottom: $gutter / 2;
+  }
 
-.footer__text {
-  width: 100%;
-  font-size: $primary-font-size;
-  text-align: center;
+  &__title {
+    margin-bottom: $gutter;
+  }
+
+  &__list {
+    width: 100%;
+    list-style: none;
+
+    &__item__link {
+      font-size: $primary-font-size;
+      color: $color-white;
+      text-decoration: none;
+      transition: $hover-transition;
+
+      &:hover {
+        color: $color-black;
+      }
+    }
+  }
+
+  &__col {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    width: 100%;
+    font-size: $primary-font-size;
+    text-align: center;
+  }
 }
 
 @media only screen and (min-width: $media-large) {
   .footer {
     flex-wrap: nowrap;
-  }
 
-  .footer__col {
-    width: 25%;
+    &__col {
+      width: 25%;
+    }
   }
 }
