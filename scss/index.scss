@@ -2,20 +2,40 @@
 
 .index {
   padding: $gutter * 2 $gutter;
+
+  &__main__title {
+    margin: $gutter * 2 0;
+    font-family: $font-heading;
+    font-size: 36px;
+  }
+
+  &__main__text {
+    margin-bottom: $gutter;
+    font-family: $font-main;
+    font-size: 24px;
+  }
+
+  &__image {
+    margin-top: $gutter;
+  }
 }
 
-.index__main__title {
-  margin: $gutter * 2 0;
-  font-family: $font-heading;
-  font-size: 36px;
-}
+@media only screen and (min-width: $media-medium) {
+  .index {
+    padding: $gutter * 2 0;
 
-.index__main__text {
-  margin-bottom: $gutter;
-  font-family: $font-main;
-  font-size: 24px;
-}
+    &__container {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
 
-.index__image {
-  margin-top: $gutter;
+      &--reverse {
+        flex-direction: row;
+      }
+    }
+
+    &__containerInner {
+      width: calc(50% - #{$gutter / 2});
+    }
+  }
 }
