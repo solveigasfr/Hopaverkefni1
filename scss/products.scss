@@ -16,12 +16,8 @@
       margin-top: 20px;
       margin-right: -10px;
       margin-left: -10px;
-      flex-direction: row;
+      flex-direction: column;
       flex-wrap: wrap;
-      @media (min-width: 801px) and (max-width: 1500px) {
-        margin-right: 0;
-        margin-left: 0;
-      }
     }
   }
 
@@ -31,22 +27,9 @@
     padding-left: $gutter;
     margin-bottom: $gutter * 2;
     flex-direction: column;
-    @media (min-width: 501px) and (max-width: 800px) {
-      width: 50%;
-      padding-right: 10px;
-      padding-left: 10px;
-    }
-    @media (min-width: 801px) and (max-width: 1500px) {
-      width: 33.33%;
-      padding-right: $gutter / 2;
-      padding-left: $gutter / 2;
-    }
   }
 
   &__price {
-
-  
-
     padding-left: $gutter / 2;
     margin-bottom: $gutter / 2;
     font-size: 24px;
@@ -102,6 +85,7 @@
       border: solid #000;
       border-width: 1px;
       border-radius: 3px;
+      transition: $hover-transition;
 
       &__img {
         width: 20px;
@@ -126,24 +110,43 @@
   }
 }
 
-@media (min-width: 501px) and (max-width: 800px) {
-  .product__grid__row .product__card:nth-child(odd) {
+@media (min-width: 501px) {
+  .product__grid__row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .product__card {
+    width: 50%;
+    padding-right: $gutter / 2;
+    padding-left: $gutter / 2;
+  }
+
+  .product__card:nth-child(odd) {
     padding-right: 0;
     padding-left: $gutter;
   }
 }
 
-@media (min-width: 801px) and (max-width: 1500px) {
-  .product__grid__row .product__card:nth-child(-3n+4) {
+@media (min-width: 801px) {
+  .product__grid__row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .product__card {
+    width: 33.3333%;
     padding-right: $gutter / 2;
     padding-left: $gutter / 2;
   }
 
-  .product__grid__row .product__card:nth-child(-3n+5) {
-    padding-right: $gutter;
+  .product__content {
+    padding-right: 10px;
+    padding-left: -20px;
   }
 
-  .product__grid__row .product__card:nth-child(-3n+6) {
-    padding-right: $gutter;
+  .product__img {
+    padding-right: 10px;
+    padding-left: 10px;
   }
 }
