@@ -1,4 +1,5 @@
 @import "scss/config.scss";
+@import "scss/buttons.scss";
 
 .course {
   &__grid {
@@ -24,8 +25,82 @@
       font-size: 36px;
     }
 
+    &-text {
+      font-size: 24px;
+    }
+
     &-image {
       padding-top: $gutter * 4;
+    }
+  }
+
+  &__form {
+    display: flex;
+    padding-right: 20px;
+    padding-left: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  &__heading {
+    padding-top: 20px;
+    margin-bottom: $gutter / 2;
+    font-family: $font-heading;
+    font-size: 36px;
+  }
+}
+
+.form {
+  &__sign-up {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border: 0;
+
+    &__line {
+      display: flex;
+      margin-top: 10px;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .course {
+    &__grid {
+      &__row {
+        flex-direction: row;
+      }
+
+      &-image {
+        padding-top: $gutter * 0;
+      }
+    }
+
+    &__form {
+      padding-top: $gutter *3;
+      padding-right: 10px;
+      padding-left: 10px;
+      flex-direction: row;
+    }
+
+    &__heading {
+      padding-top: 0;
+    }
+  }
+
+  .form {
+    &__col {
+      width: 50%;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  }
+
+  .cart {
+    &__form {
+      &__input {
+        width: auto;
+      }
     }
   }
 }

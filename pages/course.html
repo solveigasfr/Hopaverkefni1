@@ -40,59 +40,75 @@
                     <img class="course__grid-image" src="../img/climbing-gym.jpg" alt="prilihusid">
                 </div>
             </div>
-            <div class="course__grid__row">
-                <div class="course__grid__col">
-                    <h2 class="course__grid-heading">Almennar upplýsingar</h2>
-                    <form action="/action_page.php">
-                        Nafn:<input type="text" name="full_name">
-                        <br>
-                        Heimilisfang:<input type="text" name="address">
-                        <br>
-                        Aldur:<input type="text" name="age">
-                        <br>
-                        Námskeið:<select name="courses">
-                            <option value="v0-v1">V0 - V1</option>
-                            <option value="v2-v4">V2 - V4</option>
-                            <option value="v5-v7">V5 - V7</option>
-                            <option value="kids_course">Krakkanámskeið</option>
-                            <option value="mtn_climbing">Fjallaklifur</option>
-                        </select>
-                    </form>
-                </div>
-                <div class="course__grid__col">
-                    <h2 class="course__grid-heading">Greiðsluupplýsingar</h2>
-                    <form action="/action_page.php">
-                        Kortanúmer:<input type="text" name="card_number">
-                        <br>
-                        Korthafi:<input type="text" name="card_owner">
-                        <br>
-                        Gildistími:<br>
-                        Mán:<select name="exp_date">
-                            <option value="01">01</option>
-                            <option value="02">02</option>
-                            <option value="03">03</option>
-                            <option value="04">04</option>
-                            <option value="05">05</option>
-                            <option value="06">06</option>
-                            <option value="07">07</option>
-                            <option value="08">08</option>
-                            <option value="09">09</option>
-                            <option value="10">10</option>
-                            <option value="11">11</option>
-                            <option value="12">12</option>
-                        </select>
-                        Ár<select name="exp_date">
-                            <option value="2019">2019</option>
-                            <option value="2020">2020</option>
-                            <option value="2021">2021</option>
-                            <option value="2022">2022</option>
-
-                        </select>
-                    </form>
-                </div>
+            <div class="course__form">
+                <form class="form__col">
+                    <h2 class="cart__heading">Almennar upplýsingar</h2>
+                    <fieldset class="form__sign-up">
+                        <div class="form__sign-up__line">
+                            <label for="name">Nafn:</label>
+                            <input class="cart__form__input" type="text" id="name" name="name">
+                        </div>
+                        <div class="form__sign-up__line">
+                            <label for="address">Heimilisfang:</label>
+                            <input class="cart__form__input" type="text" id="address" name="address">
+                        </div>
+                        <div class="form__sign-up__line">
+                            <label for="age">Aldur:</label>
+                            <input class="cart__form__input" type="number" id="age" name="address">
+                        </div>
+                        <div class="form__sign-up__line">
+                            <label for="course">Námskeið:</label>
+                            <select class="cart__form__input" id="course">
+                                <option>V0 - V1</option>
+                                <option>V2 - V4</option>
+                                <option>V5 - V7</option>
+                                <option>Krakkanámskeið</option>
+                                <option>Fjallaklifur</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                </form>
+                <form class="form__col">
+                    <h2 class="course__heading">Greiðsluupplýsingar</h2>
+                    <fieldset class="form__payment">
+                        <div class="form__payment__line">
+                            <label for="cardNumber">Kortanúmer:</label>
+                            <input class="cart__form__input" type="text" id="cardNumber" name="cardNumber">
+                        </div>
+                        <div class="form__payment__line">
+                            <label for="cardHolder">Korthafi:</label>
+                            <input class="cart__form__input" type="text" id="cardHolder" name="cardHolder">
+                        </div>
+                        <div class="form__payment__line">
+                            <label for="duration">Gildistími:</label>
+                            <label for="month">Mán</label>
+                            <select class="cart__form__payment__input__creditCard__month" id="month">
+                                <option selected>01</option>
+                                <option>02</option>
+                                <option>03</option>
+                                <option>04</option>
+                                <option>05</option>
+                                <option>06</option>
+                                <option>07</option>
+                                <option>08</option>
+                                <option>09</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                            </select>
+                            <label for="year">Ár</label>
+                            <select class="cart__form__payment__input__creditCard__year" id="year">
+                                <option selected>2019</option>
+                                <option>2020</option>
+                                <option>2021</option>
+                                <option>2022</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                </form>
             </div>
-            <div class="course__grid__button">
-                <button class="button">Skrá</button>
+            <div class="button">
+                <button class="button__orangeToBlue">Skrá</button>
             </div>
         </div>
     </main>
