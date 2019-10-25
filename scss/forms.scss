@@ -1,8 +1,5 @@
 .form {
-  //display: flex;
   width: 100%;
-  //flex-direction: column;
-  //justify-content: space-around;
 }
 
 .form__delivery {
@@ -17,20 +14,28 @@
   border: 0;
 }
 
-.form__delivery__line {
+.form__row {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  margin-bottom: $gutter;
+
+  &--noMarginBottom {
+    margin-bottom: 0;
+  }
 }
 
-.form__payment__line {
-  display: flex;
-  justify-content: space-between;
+.form__label {
+  min-width: 120px;
+
+  &--small {
+    min-width: 50px;
+  }
 }
 
-.cart__form__input {
-  width: 340px;
-  height: 30px;
-  margin-bottom: $gutter / 2;
+.form__input {
+  width: 100%;
+  min-height: 40px;
   margin-left: $gutter / 2;
   border-color: $color-black;
   border-style: solid;
@@ -38,10 +43,9 @@
   border-radius: 3px;
 }
 
-.cart__form__payment__input__creditCard__month {
+.form__payment__input__creditCard__month {
   width: 65px;
-  height: 30px;
-  margin-bottom: $gutter / 2;
+  min-height: 40px;
   margin-left: $gutter / 2;
   border-color: $color-black;
   border-style: solid;
@@ -51,11 +55,16 @@
 
 .cart__form__payment__input__creditCard__year {
   width: 90px;
-  height: 30px;
-  margin-bottom: $gutter / 2;
+  min-height: 40px;
   margin-left: $gutter / 2;
   border-color: $color-black;
   border-style: solid;
   border-width: 1px;
   border-radius: 3px;
+}
+
+@media only screen and (min-width: $media-medium) {
+  .form__row--noMarginBottom {
+    margin-left: 10px;
+  }
 }

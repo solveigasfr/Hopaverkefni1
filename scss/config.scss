@@ -6,8 +6,9 @@ $primary-font-size: 16px;
 $font-main: "Open Sans", helvetica, arial, sans-serif;
 $font-heading: "Oswald", Verdana, serif;
 $gutter: 20px;
+$hover-transition: all 200ms ease-in-out;
 
 // Media queries
-//$media-small: 500px;
-//$media-medium: 800px;
+$media-medium: 800px;
 $media-large: 1500px;
+
