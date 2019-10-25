@@ -1,66 +1,66 @@
 .form {
   width: 100%;
-}
 
-.form__delivery {
-  flex-direction: column;
-  flex-wrap: nowrap;
-  border: 0;
-}
-
-.form__payment {
-  flex-direction: column;
-  flex-wrap: nowrap;
-  border: 0;
-}
-
-.form__row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: $gutter;
-
-  &--noMarginBottom {
-    margin-bottom: 0;
+  &__delivery {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border: 0;
   }
-}
 
-.form__label {
-  min-width: 120px;
-
-  &--small {
-    min-width: 50px;
+  &__payment {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border: 0;
   }
-}
 
-.form__input {
-  width: 100%;
-  min-height: 40px;
-  margin-left: $gutter / 2;
-  border-color: $color-black;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 3px;
-}
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: $gutter;
 
-.form__payment__input__creditCard__month {
-  width: 65px;
-  min-height: 40px;
-  margin-left: $gutter / 2;
-  border-color: $color-black;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 3px;
-}
+    &--noMarginBottom {
+      margin-bottom: 0;
+    }
+  }
 
-.form__payment__input__creditCard__year {
-  width: 90px;
-  min-height: 40px;
-  margin-left: $gutter / 2;
-  border-color: $color-black;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 3px;
+  &__label {
+    min-width: 120px;
+
+    &--small {
+      min-width: 50px;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    min-height: 40px;
+    margin-left: $gutter / 2;
+    border-color: $color-black;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+  }
+
+  &__payment__input__creditCard__month {
+    width: 65px;
+    min-height: 40px;
+    margin-left: $gutter / 2;
+    border-color: $color-black;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+  }
+
+  &__payment__input__creditCard__year {
+    width: 90px;
+    min-height: 40px;
+    margin-left: $gutter / 2;
+    border-color: $color-black;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+  }
 }
 
 @media only screen and (min-width: $media-medium) {
