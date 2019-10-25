@@ -5,80 +5,84 @@
 
 .cart {
   padding: $gutter * 2 $gutter;
-}
 
-.cart__icon {
-  width: 22px;
-  height: 22px;
-  margin-right: 4px;
-}
+  &__icon {
+    width: 22px;
+    height: 22px;
+    margin-right: 4px;
+  }
 
-.cart__heading {
-  margin-bottom: $gutter / 2;
-  font-family: $font-heading;
-  font-size: 36px;
-}
+  &__heading {
+    margin-bottom: $gutter / 2;
+    font-family: $font-heading;
+    font-size: 36px;
 
-.cart__heading__price {
-  margin-top: $gutter / 2;
-  margin-bottom: $gutter / 2;
-  font-size: 24px;
-}
+    &__price {
+      margin-top: $gutter / 2;
+      margin-bottom: $gutter / 2;
+      font-size: 24px;
+    }
+  }
 
-.cart__products {
-  display: flex;
-  width: 100%;
-  margin-bottom: $gutter;
-  flex-direction: row;
-}
+  &__products {
+    display: flex;
+    width: 100%;
+    margin-bottom: $gutter;
+    flex-direction: row;
 
-.cart__products__input {
-  display: flex;
-  max-width: 100px;
-  padding-left: 8px;
-  font-size: $primary-font-size;
-  border-color: $color-black;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 3px;
-  align-items: center;
-  justify-content: center;
-}
+    &__input {
+      display: flex;
+      max-width: 100px;
+      padding-left: 8px;
+      font-size: $primary-font-size;
+      border-color: $color-black;
+      border-style: solid;
+      border-width: 1px;
+      border-radius: 3px;
+      align-items: center;
+      justify-content: center;
+    }
 
-.cart__products__button {
-  display: flex;
-  padding: 6px;
-  margin-left: 10px;
-  font-size: $primary-font-size;
-  border-color: $color-black;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 3px;
-  align-items: center;
-  justify-content: center;
-  transition: $hover-transition;
+    &__button {
+      display: flex;
+      padding: 6px;
+      margin-left: 10px;
+      font-size: $primary-font-size;
+      border-color: $color-black;
+      border-style: solid;
+      border-width: 1px;
+      border-radius: 3px;
+      align-items: center;
+      justify-content: center;
+      transition: $hover-transition;
 
-  &:hover {
-    background-color: $color-blue;
+      &:hover {
+        background-color: $color-blue;
+      }
+    }
   }
 }
 
 @media only screen and (min-width: $media-medium) {
-  .cart__item {
-    display: flex;
-    flex-direction: row;
-  }
+  .cart {
+    padding: $gutter * 2 0;
 
-  .cart__item__content {
-    width: 75%;
-  }
+    &__item {
+      display: flex;
+      flex-direction: row;
 
-  .cart__item__image {
-    width: 25%;
-  }
+      &__content {
+        width: 75%;
+      }
 
-  .cart__forms {
-    display: flex;
-    justify-content: space-between;
+      &__image {
+        width: 25%;
+      }
+    }
+
+    &__forms {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }

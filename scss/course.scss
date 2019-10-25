@@ -1,4 +1,5 @@
 @import "scss/config.scss";
+@import "scss/buttons.scss";
 
 .course {
   &__grid {
@@ -24,8 +25,62 @@
       font-size: 36px;
     }
 
+    &-text {
+      font-size: 24px;
+    }
+
     &-image {
       padding-top: $gutter * 4;
     }
   }
+
+  &__forms {
+    display: flex;
+    padding-right: 20px;
+    padding-left: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  &__heading {
+    padding-top: 20px;
+    margin-bottom: $gutter / 2;
+    font-family: $font-heading;
+    font-size: 36px;
+  }
+}
+
+@media only screen and (min-width: $media-medium) {
+  .course {
+    &__grid {
+      &__row {
+        flex-direction: row;
+      }
+
+      &-image {
+        padding-top: $gutter * 0;
+      }
+    }
+
+    &__forms {
+      padding-top: $gutter *3;
+      padding-right: 10px;
+      padding-left: 10px;
+      flex-direction: row;
+    }
+
+    &__heading {
+      padding-top: 0;
+    }
+  }
+
+  /*
+  .form {
+    &__col {
+      width: 50%;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  }
+  */
 }
