@@ -24,6 +24,16 @@
       width: 100%;
       padding-right: 10px;
       padding-left: 10px;
+
+      &:nth-child(1) {
+        padding-right: 30px;
+        padding-left: 30px;
+      }
+
+      &:nth-child(2) {
+        padding-right: 30px;
+        padding-left: 30px;
+      }
     }
   }
 
@@ -32,7 +42,7 @@
     transform-style: preserve-3d;
     width: 100%;
     height: 100%;
-    transition: 200ms ease 200ms;
+    transition: $hover-transition;
 
     &-image {
       width: 100%;
@@ -41,37 +51,38 @@
 }
 
 @media only screen and (min-width: $media-medium) {
-  .staff__grid__col {
-    width: 50%;
-    padding-right: 10px;
-    padding-left: 10px;
-  }
+  .staff {
+    &__grid {
+      &__col {
+        width: 50%;
+        padding-right: 10px;
+        padding-left: 10px;
 
-  .staff__grid__col:nth-child(1) {
-    padding-left: 30px;
-  }
+        &:nth-child(1) {
+          padding-right: 10px;
+        }
 
-  .staff__grid__col:nth-child(2) {
-    padding-right: 30px;
-  }
-}
-
-@media only screen and (min-width: $media-large) {
-  .staff__grid__row {
-    margin-right: -30px;
-    margin-left: -30px;
+        &:nth-child(2) {
+          padding-left: 10px;
+        }
+      }
+    }
   }
 }
 
-@media only screen and (max-width: $media-medium) {
-  .staff__grid__col:nth-child(1) {
-    padding-right: 30px;
-    padding-left: 30px;
-  }
+@media only screen and (min-width: 1200px) {
+  .staff {
+    &__grid {
+      &__col {
+        &:nth-child(1) {
+          padding-left: 10px;
+        }
 
-  .staff__grid__col:nth-child(2) {
-    padding-right: 30px;
-    padding-left: 30px;
+        &:nth-child(2) {
+          padding-right: 10px;
+        }
+      }
+    }
   }
 }
 
