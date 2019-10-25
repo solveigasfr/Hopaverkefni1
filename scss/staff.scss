@@ -40,41 +40,35 @@
   }
 }
 
-@media (min-width: 600px) {
+@media only screen and (min-width: $media-medium) {
   .staff__grid__col {
     width: 50%;
     padding-right: 10px;
     padding-left: 10px;
   }
+
+  .staff__grid__col:nth-child(1) {
+    padding-left: 30px;
+  }
+
+  .staff__grid__col:nth-child(2) {
+    padding-right: 30px;
+  }
 }
 
-@media (min-width: 1200px) {
+@media only screen and (min-width: $media-large) {
   .staff__grid__row {
     margin-right: -30px;
     margin-left: -30px;
   }
 }
 
-@media (min-width: 600px) {
-  .staff__grid__col:nth-child(1) {
-    padding-left: 30px;
-  }
-}
-
-@media (max-width: 599px) {
+@media only screen and (max-width: $media-medium) {
   .staff__grid__col:nth-child(1) {
     padding-right: 30px;
     padding-left: 30px;
   }
-}
 
-@media (min-width: 600px) {
-  .staff__grid__col:nth-child(2) {
-    padding-right: 30px;
-  }
-}
-
-@media (max-width: 599px) {
   .staff__grid__col:nth-child(2) {
     padding-right: 30px;
     padding-left: 30px;
